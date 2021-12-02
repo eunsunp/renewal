@@ -1,8 +1,18 @@
+$(window).on('scroll', function() {
+  var scrollPos = this.pageYOffset;
+  var $header = $('header').innerHeight()
+  if(scrollPos >= $header - 60) {
+    $('nav').addClass('animate')
+  } else {
+    $('nav').removeClass('animate')
+  }
+})
+
 var swiper = new Swiper(".mySwiper", {
-    autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-    },
+    // autoplay: {
+    // delay: 2500,
+    // disableOnInteraction: false,
+    // },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
