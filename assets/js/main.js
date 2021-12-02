@@ -20,4 +20,22 @@ var swiper = new Swiper(".mySwiper", {
 
   AOS.init();
 
-  
+const spleft = document.querySelector(".spleft");
+const spright = document.querySelector(".spright");
+const container = document.querySelector(".container");
+
+spleft.addEventListener("mouseenter", () => {
+  container.classList.add("hover-left");
+});
+
+spleft.addEventListener("mouseleave", () => {
+  container.classList.remove("hover-left");
+});
+
+spright.addEventListener("mouseenter", () => {
+  container.classList.add("hover-right");
+});
+
+spright.addEventListener("mouseleave", () => {
+  container.classList.remove("hover-right");
+});
