@@ -45,7 +45,7 @@ a {
 }
 
 .line {
-    width: 370px;
+    width: 333px;
     height: 4px;
     background: #003fc5;
     margin: 10px;
@@ -126,11 +126,17 @@ a {
     text-align: center;
 }
 
+.bg-text-02 {
+    position: absolute;
+    top: 42%;
+    left: 16%;
+}
+
 .view-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .view-more {
@@ -162,9 +168,15 @@ a {
     font-weight: 300;
 }
 
-.bg-02-text {
-    font-size: 2.4rem;
+.bg-sub-text {
+    font-size: 2rem;
     color: #373737;
+    font-weight: 600;
+}
+
+.bg-sub-text-03 {
+    font-size: 2rem;
+    color: #ffffff;
     font-weight: 600;
 }
 
@@ -746,11 +758,11 @@ a {
         width: 1440px;
     }
     .swiper-button-prev {
-        left: 17%;
+        left: 16%;
         top: 74%;
     }
     .swiper-button-next {
-        left: 21%;
+        left: 20%;
         top: 74%;
     }
     .product img {
