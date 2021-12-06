@@ -896,20 +896,23 @@ button {
     }
 }
 
-@media(max-width: 1390px) {
+@media(max-width: 1300px) {
     .product img {
         width: 65%;
         float: left;
         margin-left: 100px;
     }
     .box-txt {
-        left: 70%;
+        left: 75%;
     }
     .btns {
         bottom: 30%;
-        right: 12%;
+        right: 6%;
     }
     .box-txt .txt {
     font-size: 32px;
+    }
+    .sec_balance .balance_wrap .balance_area .balance_box .square .txt-box {
+        left: 30px;
     }
 }
