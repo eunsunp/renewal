@@ -1,13 +1,14 @@
-$(window).on('scroll', function() {
-  var scrollPos = this.pageYOffset;
-  var $header = $('header').innerHeight()
-  if(scrollPos >= $header - 60) {
-    $('nav').addClass('animate')
+/* navbar scroll animate */
+  $(window).scroll(function() {
+  if ($(document).scrollTop() > 100) {
+    $('nav').addClass('animate');
   } else {
-    $('nav').removeClass('animate')
+    $('nav').removeClass('animate');
   }
-})
+});
 
+
+/* main-bg swiper */
 var swiper = new Swiper(".mySwiper", {
     // autoplay: {
     // delay: 2500,
@@ -29,23 +30,3 @@ var swiper = new Swiper(".mySwiper", {
   });
 
   AOS.init();
-
-const spleft = document.querySelector(".spleft");
-const spright = document.querySelector(".spright");
-const container = document.querySelector(".container");
-
-spleft.addEventListener("mouseenter", () => {
-  container.classList.add("hover-left");
-});
-
-spleft.addEventListener("mouseleave", () => {
-  container.classList.remove("hover-left");
-});
-
-spright.addEventListener("mouseenter", () => {
-  container.classList.add("hover-right");
-});
-
-spright.addEventListener("mouseleave", () => {
-  container.classList.remove("hover-right");
-});
