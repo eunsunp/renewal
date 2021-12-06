@@ -896,3 +896,20 @@ button {
     }
 }
 
+@media(max-width: 1200px) {
+    .product img {
+        width: 65%;
+        float: left;
+        margin-left: 60px;
+    }
+    .box-txt {
+        left: 73%;
+    }
+    .btns {
+        bottom: 26%;
+        right: 6.5%;
+    }
+    .box-txt .txt {
+    font-size: 32px;
+    }
+}
